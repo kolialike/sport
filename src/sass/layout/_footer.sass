@@ -1,0 +1,140 @@
+#footer
+	+pie-clearfix
+.footer-top
+	background: #009ee3
+	clear: both
+	+pie-clearfix
+	padding-top: 25px
+	padding-bottom: 40px
+	.map-pin
+		&:before
+			+font-icon("map-pin")
+	.footer-phone
+		&:before
+			+font-icon("telephone")
+	.email
+		&:before
+			+font-icon("email")
+.footer-item
+	width: 33.3333%
+	float: left
+	padding-right: 30px
+	+box-sizing(border-box)
+	h4
+		color: #fff 
+		font-size: 19px
+		line-height: 22px
+		text-transform: uppercase
+		margin-bottom: 40px
+		font-weight: 900
+	p 
+		font-size: 18px
+		line-height: 36px
+		color: #fff
+		font-weight: 500
+		margin-bottom: 20px
+		&:before
+			font-size: 30px
+			color: #fff
+			vertical-align: bottom
+			margin-right: 20px
+	.search
+		width: 100%
+		input
+			outline: none 
+			border: none
+			height: 60px
+			+box-sizing(border-box)
+		input[type="search"]
+			border: 1px solid rgba(#fff, 0.5)
+			float: left
+			font-size: 18px
+			line-height: 20px
+			color: #fff
+			background: transparent
+			padding: 0px 15px
+			width: 245px
+			+placeholder 
+				font-size: 18px
+				line-height: 20px
+				color: #fff
+		input[type="submit"]
+			background: rgba(#fff, 0.5)
+			+transition(0.2s)
+			width: 100%
+		.submit
+			float: right
+			position: relative
+			+pie-clearfix
+			width: 100px
+			cursor: pointer
+			&:hover
+				input[type="submit"]
+					background: #fff
+			&:before
+				+font-icon("paper-plane")
+				position: absolute
+				font-size: 50px
+				right: 25px
+				top: 5px
+	.socials
+		display: block
+		clear: both
+		padding-top: 35px
+		a 
+			text-decoration: none
+			border: 1px solid #fff
+			text-align: center
+			margin-right: 10px
+			+border-radius(50%)
+			height: 40px
+			width: 40px
+			display: inline-block
+			&:hover
+				+opacity(0.6)
+			&:after
+				content: ''
+				display: inline-block
+				vertical-align: middle
+				height: 100%
+				width: 0
+			&:before
+				color: #fff
+				font-size: 24px
+				display: inline-block
+				vertical-align: middle
+		.facebook
+			&:before
+				+font-icon("facebook")
+		.twitter
+			&:before
+				+font-icon("twitter")
+		.dribble
+			&:before
+				+font-icon("dribbble")
+		.instagram
+			&:before
+				+font-icon("instagram")
+		.google
+			&:before
+				+font-icon("google-plus")
+		.yuotube
+			&:before
+				+font-icon("youtube")
+.footer-bottom
+	background: #282828
+	padding: 30px 0
+	clear: both
+	+pie-clearfix
+	p 
+		float: right
+		font-size: 18px
+		line-height: 22px
+		color: #fff
+		a 
+			font-size: 18px
+			line-height: 22px
+			color: #fff
+			text-decoration: none
+			&:hover
+				color: #b2b2b2

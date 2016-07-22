@@ -1,0 +1,125 @@
+.event-content
+	background: image-url("bg.jpg") no-repeat center center
+	background-size: cover
+	padding-bottom: 125px
+	.swiper-slide
+		text-align: center
+		padding: 30px 5px
+		+box-sizing(border-box)
+	.swiper-slide-active
+		background: #ffffff
+		// width: 440px!important
+		+transition(0.3s)
+		.event-date
+			background: #0da3e4
+			&:after
+				border-top: 17px solid #0da3e4
+	.swiper-slide-prev,
+	.swiper-slide-next
+		// width: 350px!important
+		.enent-text
+			border: none
+		.more 
+			display: none
+	.swiper-button-prev,
+	.swiper-button-next
+		top: 63px
+		width: 44px
+		height: 44px
+		&:before
+			color: #0da3e4
+			font-size: 44px
+	.swiper-button-prev
+		&:before
+			+font-icon("back")
+			
+	.swiper-button-next
+		.enent-text
+			.enent-text-l
+				width: 40%!important
+			.enent-text-r
+				width: 60%!important
+		&:before
+			+font-icon("next")
+			
+
+	.enent-text
+		padding: 20px 0px
+		border-bottom: 1px solid #f6f6f6
+		+pie-clearfix
+	.enent-text-l
+		float: left
+		width: 42%
+		text-align: right
+		h5
+			display: block
+			position: relative
+			font-size: 18px
+			line-height: 28px
+			color: #0da3e4
+			padding-right: 35px
+			+box-sizing(border-box)
+			word-break: break-all
+			font-weight: 700
+			img
+				position: absolute
+				top: 11px
+				right: 13px
+	.enent-text-r
+		float: right
+		width: 58%
+		text-align: left
+		padding-right: 20px
+		+box-sizing(border-box)
+		p 
+			font-size: 16px
+			line-height: 28px
+			font-weight: 700
+			// word-break: break-all
+	.more
+		clear: both
+		display: inline-block
+		color: #fff 
+		font-size: 18px
+		line-height: 22px
+		background: #0da3e4
+		text-decoration: none
+		margin-top: 25px
+		padding: 10px 40px
+		&:hover
+			background: #1d82ae
+	.event-date
+		text-transform: uppercase
+		color: #fff 
+		font-weight: 700
+		background: #282828
+		position: relative
+		display: inline-block
+		height: 106px
+		width: 106px
+		margin-bottom: 35px
+		&:after
+			content: ""
+			display: block
+			width: 0
+			height: 0
+			border-left: 15px solid transparent
+			border-right: 15px solid transparent
+			border-top: 17px solid #282828
+			position: absolute
+			bottom: -17px
+			left: 50%
+			margin-left: -15px
+		strong
+			font-size: 43.22px
+			line-height: 45px
+			display: block
+			margin: 17px 0 7px
+		small
+			font-size: 18px
+			line-height: 20px
+			display: block
+
+.calendar
+	&:before
+		+font-icon("calendar")

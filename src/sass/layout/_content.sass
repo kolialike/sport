@@ -1,0 +1,106 @@
+@import content/news-content
+@import content/gallery-content
+@import content/event-content
+
+section
+	.wrapper
+		&>h3
+			color: #282828
+			font-size: 30px
+			line-height: 34px
+			display: block
+			border-bottom: 1px solid #0da3e4
+			padding-bottom: 30px
+			padding-top: 70px
+			margin-bottom: 50px
+			&:before
+				font-size: 25px
+				color: #0da3e4
+				margin-right: 24px
+				display: inline-block
+				vertical-align: bottom
+
+.slider-content
+	position: relative
+	.banner-img
+		height: 550px
+		&:before
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			position: absolute
+			right: 0
+			bottom: 0
+			top: 0
+			left: 0
+			z-index: 5
+			background-color: rgba(#0c2539, 0.5)
+			background-image: -moz-radial-gradient(circle farthest-corner at bottom left , #0c2539 0%, #0c2539 0%, transparent 95%)
+			background-image: -webkit-radial-gradient(circle farthest-corner at bottom left , #0c2539 0%, #0c2539 0%, transparent 95%)
+			background-image: -o-radial-gradient(circle farthest-corner at bottom left , #0c2539 0%, #0c2539 0%, transparent 95%)
+			background-image: -ms-radial-gradient(circle farthest-corner at bottom left , #0c2539 0%, #0c2539 0%, transparent 95%)
+			background-image: radial-gradient(circle farthest-corner at bottom left , #0c2539 0%, #0c2539 0%, transparent 95%)
+		img 
+			display: block
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.swiper-pagination-bullet-active
+		background: #009ee3!important
+	.swiper-pagination
+		bottom: 24px
+		left: 20px
+	.swiper-pagination-bullet
+		width: 15px
+		height: 15px
+		background: transparent
+		border: 2px solid #009ee3
+		margin-right: 13px
+		+opacity(1)
+	.swiper-slide
+		position: relative
+	.wrapper
+		position: absolute
+		right: 0
+		bottom: 0
+		top: 0
+		left: 0
+	.banner-text
+		margin-top: 225px
+		width: 550px
+		color: #fff
+		position: relative
+		z-index: 12
+		p 
+			font-size: 20px
+			line-height: 28px
+			display: block
+			padding-right: 50px
+			&:child-type-of(1)
+				text-transform: uppercase
+				font-weight: 500
+				padding-right: 0
+		h3
+			font-size: 45px
+			line-height: 50px
+			display: block
+			margin-top: 23px
+			margin-bottom: 21px
+			font-weight: 900
+			text-transform: uppercase
+			letter-spacing: 1.1px
+
+
+
+
+
+
+
+
+
+
+
+
+
+

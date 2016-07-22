@@ -1,0 +1,78 @@
+.gallery-content
+	.wrapper-big
+		max-width: 100%
+		min-width: 1220px
+		padding: 0 0
+		margin: auto
+		position: relative
+		display: block
+		+pie-clearfix
+			
+		&:before
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			background: rgba(#0a0000, 0.6)
+			position: absolute
+			bottom: 0
+			top: 0
+			right: 0
+			left: 0
+			z-index: 1
+			pointer-events: none
+	.gallery-item
+		height: 245px
+		position: relative
+		width: 320/1920*100%
+		float: left
+		+transition(0.3s)
+		+breakpoint(1550px)
+			width: 25%
+		&:hover
+			&:before
+				content: ""
+				display: block
+				width: 100%
+				height: 100%
+				position: absolute
+				right: 0
+				bottom: 0
+				left: 0
+				top: 0
+				z-index: 2
+				background: rgba(#0da3e4, 0.95)
+				+transition(0.3s)
+			.gallery-text
+				max-height: 245px
+				+opacity(1)
+		img
+			width: 100%
+			height: 100%
+			position: relative
+			object-fit: cover
+		.gallery-text
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			padding: 20px
+			+box-sizing(border-box)
+			z-index: 2
+			max-height: 160px
+			+opacity(0)
+			+transition(0.3s)
+			p
+				font-size: 22px
+				line-height: 26px
+				color: #fff
+				padding: 35px 0 20px
+			h5
+				font-size: 28px
+				line-height: 32px
+				color: #fff 
+				font-weight: 900
+
+.camera
+	&:before
+		+font-icon("camera")

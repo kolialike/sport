@@ -1,0 +1,195 @@
+#header
+	+pie-clearfix
+	position: relative
+	.logo
+		position: absolute
+		top: 47px
+		left: 50%
+		display: inline-block
+		margin-left: -72px
+		background: #fff
+		padding: 16px 15px 8px 11px
+		+border-radius(50%)
+		z-index: 3
+		&:hover
+			+opacity(0.8)
+.header-top
+	display: block
+	background: #009ee3
+	height: 57px
+	position: relative
+	z-index: 12
+	+pie-clearfix
+	.header-top-l
+		float: left
+	p 
+		padding: 23px 0 18px
+		font-size: 14px
+		color: #fff
+		line-height: 16px
+		font-weight: 500
+	.phone
+		border-right: 1px solid rgba(#fff, 0.09)
+		padding-right: 16px
+		margin-right: 20px
+		float: left
+		&:before
+			+font-icon("technology")
+			font-size: 20px
+			margin-right: 10px
+			color: #ffffff
+			vertical-align: bottom
+	.mail
+		float: left
+		&:before
+			+font-icon("email")
+			font-size: 20px
+			color: #ffffff
+			margin-right: 10px
+			vertical-align: bottom
+	.header-top-r
+		float: right
+	.search-popup
+		float: right
+		padding: 15px 20px 12px
+		.search
+			position: relative
+			&:hover
+				input[type="search"]
+					width: 300px
+					.search-submit
+						&:before
+							color: #186688
+		input[type="search"]
+			border: none
+			outline: none
+			height: 30px
+
+			width: 110px
+			padding: 5px 10px
+			padding-left: 30px
+			background: transparent
+			+box-sizing(border-box)
+			color: #fff
+			font-size: 14px
+			line-height: 16px
+			+transition(0.2s)
+			+placeholder
+				color: #fff
+				font-weight: 500
+				font-size: 14px
+				line-height: 16px
+		.search-submit
+			position: absolute
+			left: 0
+			top: 0
+			height: 30px
+			width: 30px
+			&:before
+				+font-icon("search")
+				position: absolute
+				right: 0
+				top: 5px
+				left: 0
+				bottom: 0
+				z-index: 1
+				pointer-events: none
+				color: #fff
+			input[type="submit"]
+				position: relative
+				border: none
+				outline: none
+				background: transparent
+				height: 100%
+				width: 30px
+	.language
+		float: right
+		border-left: 1px solid rgba(#fff, 0.09)
+		padding: 23px 5px 18px 0
+		a 
+			margin-left: 13px
+			display: inline-block
+			&:hover
+				+opacity(0.6)
+.header-bottom
+	display: block
+	background: rgba(#f5fcff, 0.8)
+	+pie-clearfix
+	li 
+		float: left 
+		margin-right: 60px
+		a 
+			font-size: 16px
+			line-height: 20px
+			color: #515151
+			display: inline-block
+			font-weight: 700
+			text-decoration: none
+			text-transform: uppercase
+			letter-spacing: 1px
+			position: relative
+			padding-right: 20px
+			padding-left: 10px
+			img 
+				position: absolute
+				right: 0
+				top: 7px
+			&:hover
+				color: #009ee3
+				font-weight: 900
+.header-bottom-l
+	float: left
+	ul 
+		padding: 28px 0 19px
+		float: left
+.header-bottom-r
+	float: right
+	ul 
+		padding: 28px 0 19px
+		float: right
+	li 
+		float: right
+		margin-left: 60px
+		margin-right: 0
+		position: relative
+		&:hover
+			.header-bottom-r-submenu
+				+opacity(1)
+				max-height: 500px
+	a 
+		position: relative
+.header-bottom-r-submenu
+	background: rgba(#f5fcff, 0.8)
+	+opacity(0)
+	position: absolute
+	top: 20px
+	left: 0
+	max-height: 0px
+	z-index: 20
+	min-width: 100%
+	a 
+		float: none
+		display: block!important
+		font-size: 14px !important
+		margin: 5px 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
